@@ -55,6 +55,6 @@ class Dog
       SELECT * FROM dogs WHERE name = ? AND breed = ?
     SQL
 
-    newdog = DB[:conn].execute(sql, name, breed).first
+    new_dog = DB[:conn].execute(sql, name, breed).first
   end
 end
