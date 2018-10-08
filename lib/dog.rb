@@ -48,5 +48,6 @@ class Dog
 
     object = DB[:conn].execute(sql, id)
     Dog.new(id: object[0], name: object[1], breed: object[2])
+  end.first
   end
 end
