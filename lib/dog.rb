@@ -46,7 +46,6 @@ class Dog
       SELECT * FROM dogs WHERE id = ?
     SQL
 
-    object = DB[:conn].execute(sql, id)
-    Dog.new(id: object[0], name: object[1], breed: object[2])
+    DB[:conn].execute(sql, id)
   end
 end
