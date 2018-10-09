@@ -60,9 +60,9 @@ class Dog
       new_dog = dog[0]
          two = Dog.new(id: new_dog[0], name: new_dog[1], breed: new_dog[2])
     else
-         dog = self.create(name: name, breed: breed)
+         two = self.create(name: name, breed: breed)
     end
-      dog
+    two
     end
   end
 end
