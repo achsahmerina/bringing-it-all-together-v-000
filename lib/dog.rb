@@ -68,4 +68,7 @@ class Dog
     new_dog = self.new(id: id, name: name, breed: breed)
     new_dog
   end
+
+  def self.find_by_name
+  end
 end
