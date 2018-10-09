@@ -67,6 +67,5 @@ class Dog
     breed = breed[2]
     new_dog = self.new(id: id, name: name, breed: breed)
     new_dog
-
   end
 end
