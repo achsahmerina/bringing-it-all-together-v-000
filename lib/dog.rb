@@ -56,7 +56,7 @@ class Dog
     SQL
 
     two = DB[:conn].execute(sql, name, breed).first
-    if two.empty?
+    if two.empty
       new_dog = Dog.new_from_db(two)
     else
       new_dog = self.create(:name => name, :breed => breed)
