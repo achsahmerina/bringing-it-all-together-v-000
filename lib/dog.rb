@@ -54,7 +54,7 @@ class Dog
     two_dogs = DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?", name, breed)
       if !two_dogs.empty?
         new_dog = two_dogs[0]
-        two_dogs = Dog.new(id: new_dog[0], name: new_dog[1], breed: new_dog[2])
+        two_dogs = self.new(id: new_dog[0], name: new_dog[1], breed: new_dog[2])
       else
         two_dogs = self.create(name: name, breed: breed)
       end
