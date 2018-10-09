@@ -63,6 +63,6 @@ class Dog
          two = self.create(name: name, breed: breed)
     end
     two
-    end
+  
   end
 end
