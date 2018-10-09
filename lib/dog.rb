@@ -60,4 +60,13 @@ class Dog
       end
         two_dogs
   end
+
+  def self.new_from_db(breed)
+    id = breed[0]
+    name = breed[1]
+    breed = breed[2]
+    new_dog = self.new(id: id, name: name, breed: breed)
+    new_dog
+
+  end
 end
