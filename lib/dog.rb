@@ -77,4 +77,7 @@ class Dog
     name = DB[:conn].execute(sql, name)[0]
     self.new(id: name[0], name: name[1], breed: name[2])
   end
+
+  def update
+  end
 end
